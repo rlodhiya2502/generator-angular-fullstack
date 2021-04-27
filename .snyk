@@ -1,0 +1,18 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.19.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - yeoman-generator > xo > lodash:
+        patched: '2021-04-27T06:26:51.352Z'
+    - yeoman-generator > xo > eslint-import-resolver-webpack > lodash:
+        patched: '2021-04-27T06:26:51.352Z'
+    - yeoman-generator > xo > eslint-plugin-unicorn > lodash:
+        patched: '2021-04-27T06:26:51.352Z'
+    - yeoman-generator > xo > @typescript-eslint/parser > @typescript-eslint/typescript-estree > lodash:
+        patched: '2021-04-27T06:26:51.352Z'
+    - yeoman-generator > xo > eslint-plugin-ava > enhance-visitors > lodash:
+        patched: '2021-04-27T06:26:51.352Z'
+    - yeoman-generator > xo > @typescript-eslint/parser > @typescript-eslint/experimental-utils > @typescript-eslint/typescript-estree > lodash:
+        patched: '2021-04-27T06:26:51.352Z'
