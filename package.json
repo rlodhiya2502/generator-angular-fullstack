@@ -54,7 +54,7 @@
     "gulp-html2jade": "^1.1.2",
     "gulp-rename": "^1.2.2",
     "gulp-tap": "^1.0.1",
-    "insight": "~0.10.1",
+    "insight": "~0.11.0",
     "jscodeshift": "^0.3.30",
     "lodash": "^4.17.15",
     "semver": "^5.1.0",
