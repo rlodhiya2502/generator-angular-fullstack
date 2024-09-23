@@ -33,8 +33,9 @@
   "scripts": {
     "pre-test": "gulp updateFixtures:test && gulp installFixtures && gulp build",
     "test": "mocha --require should --require @babel/register --require ./mocha.conf --reporter spec --timeout 120000 test/pre.test.js test/*.test.js",
-    "prepublish": "gulp build",
-    "build": "gulp build"
+    "prepublish": "npm run snyk-protect && gulp build",
+    "build": "gulp build",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@babel/core": "^7.6.4",
@@ -55,12 +56,13 @@
     "gulp-rename": "^1.2.2",
     "gulp-tap": "^1.0.1",
     "insight": "~0.10.1",
-    "jscodeshift": "^0.3.30",
-    "lodash": "^4.17.15",
+    "jscodeshift": "^0.6.1",
+    "lodash": "^4.17.21",
     "semver": "^5.1.0",
-    "underscore.string": "^3.1.1",
-    "yeoman-generator": "5.0.0",
-    "yeoman-welcome": "^1.0.1"
+    "underscore.string": "^3.3.6",
+    "yeoman-generator": "5.0.1",
+    "yeoman-welcome": "^1.0.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@types/gulp": "^4.0.6",
@@ -113,5 +115,6 @@
     "node": ">= 10",
     "npm": ">= 6"
   },
-  "license": "BSD-2-Clause"
+  "license": "BSD-2-Clause",
+  "snyk": true
 }
