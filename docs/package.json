@@ -99,8 +99,8 @@
     "filesize": "^3.3.0",
     "preact": "^6.2.1",
     "preact-compat": "^3.6.0",
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
     "react-router": "^2.8.1",
     "whatwg-fetch": "^2.0.1"
   }
